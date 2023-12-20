@@ -1,0 +1,64 @@
+# Project: jokermap
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ../compiled/drawMAP.o ../compiled/genMap.o ../compiled/open_file.o ../compiled/save_file.o ../compiled/SList.o ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/imgui.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o
+LINKOBJ  = ../compiled/drawMAP.o ../compiled/genMap.o ../compiled/open_file.o ../compiled/save_file.o ../compiled/SList.o ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/imgui.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"../lib"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"../lib"
+BIN      = ../jokermap.exe
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../compiled/drawMAP.o: ../jokermap/drawMAP.c
+	$(CC) -c ../jokermap/drawMAP.c -o ../compiled/drawMAP.o $(CFLAGS)
+
+../compiled/genMap.o: ../jokermap/genMap.c
+	$(CC) -c ../jokermap/genMap.c -o ../compiled/genMap.o $(CFLAGS)
+
+../compiled/open_file.o: ../jokermap/open_file.c
+	$(CC) -c ../jokermap/open_file.c -o ../compiled/open_file.o $(CFLAGS)
+
+../compiled/save_file.o: ../jokermap/save_file.c
+	$(CC) -c ../jokermap/save_file.c -o ../compiled/save_file.o $(CFLAGS)
+
+../compiled/SList.o: ../jokermap/SList.c
+	$(CC) -c ../jokermap/SList.c -o ../compiled/SList.o $(CFLAGS)
+
+../compiled/exceptio.o: ../lib/exceptio.c
+	$(CC) -c ../lib/exceptio.c -o ../compiled/exceptio.o $(CFLAGS)
+
+../compiled/genlib.o: ../lib/genlib.c
+	$(CC) -c ../lib/genlib.c -o ../compiled/genlib.o $(CFLAGS)
+
+../compiled/graphics.o: ../lib/graphics.c
+	$(CC) -c ../lib/graphics.c -o ../compiled/graphics.o $(CFLAGS)
+
+../compiled/imgui.o: ../lib/imgui.c
+	$(CC) -c ../lib/imgui.c -o ../compiled/imgui.o $(CFLAGS)
+
+../compiled/linkedlist.o: ../lib/linkedlist.c
+	$(CC) -c ../lib/linkedlist.c -o ../compiled/linkedlist.o $(CFLAGS)
+
+../compiled/random.o: ../lib/random.c
+	$(CC) -c ../lib/random.c -o ../compiled/random.o $(CFLAGS)
+
+../compiled/simpio.o: ../lib/simpio.c
+	$(CC) -c ../lib/simpio.c -o ../compiled/simpio.o $(CFLAGS)
+
+../compiled/strlib.o: ../lib/strlib.c
+	$(CC) -c ../lib/strlib.c -o ../compiled/strlib.o $(CFLAGS)
