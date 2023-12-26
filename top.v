@@ -11,7 +11,11 @@ module top(
     output VSYNC,
     output [3:0]Red,
     output [3:0]Green,
-    output [3:0]Blue
+    output [3:0]Blue,
+    output seg_clk,
+    output seg_clrn,
+    output seg_sout,
+    output seg_pen
 );
     wire up, down, left, right, enter;
     wire [4:0] num;
@@ -95,5 +99,31 @@ module top(
         .arrived(arrived),
         .enter(enter),
         .state(state)
+    );
+
+    /*definition of module display_level_num(
+        input wire clk,
+        input wire [1:0] SW1,
+        input wire [1:0] SW2, //switch 没用，但是先别删
+        input wire [11:0] SW, //don't alter the definition of SSegDev for now
+        input [4:0] num,
+        input [2:0] level,
+        output wire seg_clk, 
+        output wire seg_clrn,
+        output wire seg_sout,
+        output wire SEG_PEN
+);*/
+
+    display_level_num display_level_num(
+        .clk(clk),
+        .SW1(2'b00),
+        .SW2(2'b00),
+        .SW(11'b00000000000),
+        .num(num),
+        .level(level),
+        .seg_clk(seg_clk),
+        .seg_clrn(seg_clrn),
+        .seg_sout(seg_sout),
+        .SEG_PEN(seg_pen)
     );
 endmodule

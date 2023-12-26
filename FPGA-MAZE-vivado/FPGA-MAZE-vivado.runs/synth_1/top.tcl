@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -86,8 +87,22 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v
+  D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v
+  D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v
+  D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v
+  D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v
+  D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v
   D:/FPGA-MAZE-2023DD-final/clkdiv_25mhz.v
   D:/FPGA-MAZE-2023DD-final/create_map.v
+  D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v
   D:/FPGA-MAZE-2023DD-final/draw.v
   D:/FPGA-MAZE-2023DD-final/fsm.v
   D:/FPGA-MAZE-2023DD-final/graphics.v
@@ -97,6 +112,7 @@ read_verilog -library xil_defaultlib {
   D:/FPGA-MAZE-2023DD-final/vgac.v
   D:/FPGA-MAZE-2023DD-final/top.v
 }
+read_edif D:/FPGA-MAZE-2023DD-final/7segment/P2S.edf
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -106,6 +122,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/FPGA-MAZE-2023DD-final/Maze_constraints.xdc
+set_property used_in_implementation false [get_files D:/FPGA-MAZE-2023DD-final/Maze_constraints.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

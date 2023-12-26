@@ -20,7 +20,7 @@ module draw
 	// position
 	parameter   H_VALID =   10'd640,    // Width of the screen
 				V_VALID =   9'd480,    //  Height of the screen
-				MAP_CENTER_X = 10'd240,     // Center of x of the map
+				MAP_CENTER_X = 10'd320,     // Center of x of the map
 				MAP_CENTER_Y = 9'd240,     // Center of y of the map
 				block_width = 10'd24;   // width of a block
 

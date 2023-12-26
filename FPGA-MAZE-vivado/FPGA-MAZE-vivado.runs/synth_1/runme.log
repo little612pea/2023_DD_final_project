@@ -4,22 +4,27 @@
 
 
 
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
 ****** Vivado v2021.1 (64-bit)
   **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
   **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1142.242 ; gain = 23.969
 Command: synth_design -top top -part xc7k160tffg676-2L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21540
+INFO: [Synth 8-7075] Helper process launched with PID 7084
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.852 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/FPGA-MAZE-2023DD-final/top.v:1]
 INFO: [Synth 8-6157] synthesizing module 'graphics' [D:/FPGA-MAZE-2023DD-final/graphics.v:2]
@@ -41,25 +46,88 @@ INFO: [Synth 8-6157] synthesizing module 'move' [D:/FPGA-MAZE-2023DD-final/move.
 INFO: [Synth 8-6155] done synthesizing module 'move' (8#1) [D:/FPGA-MAZE-2023DD-final/move.v:3]
 INFO: [Synth 8-6157] synthesizing module 'fsm' [D:/FPGA-MAZE-2023DD-final/fsm.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'fsm' (9#1) [D:/FPGA-MAZE-2023DD-final/fsm.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [D:/FPGA-MAZE-2023DD-final/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_level_num' [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (10#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alter_size_display' [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alter_size_display' (11#1) [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SSeg_Dev' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (12#1) [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (13#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_3_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_3_INPUTS' (14#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_3_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_3_INPUTS' (15#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (16#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_4_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_4_INPUTS' (17#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (18#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (19#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (20#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (21#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg_Dev' (22#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'display_level_num' (23#1) [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (24#1) [D:/FPGA-MAZE-2023DD-final/top.v:1]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1141.852 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1141.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/FPGA-MAZE-2023DD-final/Maze_constraints.xdc]
+Finished Parsing XDC File [D:/FPGA-MAZE-2023DD-final/Maze_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA-MAZE-2023DD-final/Maze_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1159.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1159.504 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1159.504 ; gain = 17.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7k160tffg676-2L
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1159.504 ; gain = 17.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1159.504 ; gain = 17.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.504 ; gain = 17.652
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -71,7 +139,7 @@ Detailed RTL Component Info :
 	   3 Input   10 Bit       Adders := 2     
 	   2 Input    9 Bit       Adders := 4     
 	   2 Input    5 Bit       Adders := 3     
-	   2 Input    4 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 1     
 +---Registers : 
 	              361 Bit    Registers := 1     
@@ -119,25 +187,29 @@ BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:02:10 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1171.551 ; gain = 29.699
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1176.406 ; gain = 34.555
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:02:10 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.902 ; gain = 43.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:02:12 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -155,106 +227,237 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |P2S           |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    90|
-|3     |LUT1   |    20|
-|4     |LUT2   |   109|
-|5     |LUT3   |   270|
-|6     |LUT4   |   144|
-|7     |LUT5   |   278|
-|8     |LUT6   |   622|
-|9     |MUXF7  |   175|
-|10    |MUXF8  |    51|
-|11    |FDCE   |   128|
-|12    |FDPE   |     6|
-|13    |FDRE   |   245|
-|14    |FDSE   |    46|
-|15    |IBUF   |     4|
-|16    |OBUF   |    14|
+|1     |P2S    |     1|
+|2     |BUFG   |     2|
+|3     |CARRY4 |    96|
+|4     |LUT1   |    23|
+|5     |LUT2   |   117|
+|6     |LUT3   |   286|
+|7     |LUT4   |   137|
+|8     |LUT5   |   279|
+|9     |LUT6   |   632|
+|10    |MUXF7  |   176|
+|11    |MUXF8  |    51|
+|12    |FDCE   |   134|
+|13    |FDPE   |    10|
+|14    |FDRE   |   266|
+|15    |FDSE   |    46|
+|16    |IBUF   |     4|
+|17    |OBUF   |    18|
 +------+-------+------+
-
-Report Instance Areas: 
-+------+------------------+-------------+------+
-|      |Instance          |Module       |Cells |
-+------+------------------+-------------+------+
-|1     |top               |             |  2204|
-|2     |  create_map      |create_map   |   933|
-|3     |  fsm             |fsm          |    12|
-|4     |  graphics        |graphics     |   333|
-|5     |    clk_div_25mhz |clkdiv_25mhz |     4|
-|6     |    draw          |draw         |   199|
-|7     |    vga_ctrl      |vgac         |   130|
-|8     |  init            |init         |   583|
-|9     |  move            |move         |   259|
-|10    |  ps2             |ps2          |    64|
-+------+------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 1142.242 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1194.453 ; gain = 34.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1194.453 ; gain = 52.602
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1142.242 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 316 Unisim elements for replacement
+Parsing EDIF File [D:/FPGA-MAZE-2023DD-final/7segment/P2S.edf]
+Finished Parsing EDIF File [D:/FPGA-MAZE-2023DD-final/7segment/P2S.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1199.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 323 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[32]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[33]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[34]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[35]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[36]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[37]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[38]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[39]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[40]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[41]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[42]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[43]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[44]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[45]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[46]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[47]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[48]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[49]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[50]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[51]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[52]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[53]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[54]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[55]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[56]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[57]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[58]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[59]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[60]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[61]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[62]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[63]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/Serial_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/rst_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_pen_OBUF_inst, from the path connected to top-level port: seg_pen 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_sout_OBUF_inst, from the path connected to top-level port: seg_sout 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_clrn_OBUF_inst, from the path connected to top-level port: seg_clrn 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_clk_OBUF_inst, from the path connected to top-level port: seg_clk 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1222.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 8235f5a6
+Synth Design complete, checksum: 63d0f5f9
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:02:31 . Memory (MB): peak = 1142.922 ; gain = 0.680
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1222.531 ; gain = 80.680
 INFO: [Common 17-1381] The checkpoint 'D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 18:36:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 11:42:18 2023...
