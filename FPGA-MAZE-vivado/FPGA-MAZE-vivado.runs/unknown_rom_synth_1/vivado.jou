@@ -9,3 +9,4 @@
 # Log file: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/unknown_rom_synth_1/unknown_rom.vds
 # Journal file: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/unknown_rom_synth_1\vivado.jou
 #-----------------------------------------------------------
+source unknown_rom.tcl -notrace

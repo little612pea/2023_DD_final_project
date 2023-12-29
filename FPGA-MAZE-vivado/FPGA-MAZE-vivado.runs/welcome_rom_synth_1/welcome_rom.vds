@@ -98,3 +98,7 @@ INFO: [Synth 8-638] synthesizing module 'welcome_rom' [d:/FPGA-MAZE-2023DD-final
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     8.675377 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/welcome_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/welcome_rom/synth/welcome_rom.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'welcome_rom' (11#1) [d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/welcome_rom/synth/welcome_rom.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:27 ; elapsed = 00:04:24 . Memory (MB): peak = 1710.910 ; gain = 532.672
+---------------------------------------------------------------------------------
