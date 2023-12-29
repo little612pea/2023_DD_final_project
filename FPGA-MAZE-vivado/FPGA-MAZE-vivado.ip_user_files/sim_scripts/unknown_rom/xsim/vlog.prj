@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../FPGA-MAZE-vivado.gen/sources_1/ip/unknown_rom/sim/unknown_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
