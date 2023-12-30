@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 30 00:50:48 2023
+| Date         : Sat Dec 30 12:04:56 2023
 | Host         : DESKTOP-KQ35SGU running 64-bit major release  (build 9200)
 | Command      : report_utilization -file player_rom_utilization_synth.rpt -pb player_rom_utilization_synth.pb
 | Design       : player_rom

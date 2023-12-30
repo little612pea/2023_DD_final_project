@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "road_rom_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -88,7 +90,7 @@ set_property ip_output_repo d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.srcs/sources_1/ip/road_rom/road_rom.xci
+read_ip -quiet d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.srcs/sources_1/ip/road_rom_2/road_rom.xci
 set_property used_in_implementation false [get_files -all d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/road_rom/road_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }

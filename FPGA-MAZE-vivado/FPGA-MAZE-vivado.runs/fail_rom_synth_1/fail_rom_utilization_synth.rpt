@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 30 00:28:03 2023
+| Date         : Sat Dec 30 12:06:58 2023
 | Host         : DESKTOP-KQ35SGU running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fail_rom_utilization_synth.rpt -pb fail_rom_utilization_synth.pb
 | Design       : fail_rom
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  280 |     0 |          0 |    101400 |  0.28 |
-|   LUT as Logic          |  280 |     0 |          0 |    101400 |  0.28 |
+| Slice LUTs*             |  283 |     0 |          0 |    101400 |  0.28 |
+|   LUT as Logic          |  283 |     0 |          0 |    101400 |  0.28 |
 |   LUT as Memory         |    0 |     0 |          0 |     35000 |  0.00 |
 | Slice Registers         |   14 |     0 |          0 |    202800 | <0.01 |
 |   Register as Flip Flop |   14 |     0 |          0 |    202800 | <0.01 |
@@ -153,15 +153,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  240 |                 LUT |
+| LUT6     |  247 |                 LUT |
 | RAMB36E1 |  104 |        Block Memory |
 | MUXF7    |   93 |               MuxFx |
 | MUXF8    |   36 |               MuxFx |
-| LUT5     |   33 |                 LUT |
+| LUT5     |   25 |                 LUT |
 | FDRE     |   14 |        Flop & Latch |
-| LUT4     |    4 |                 LUT |
-| LUT3     |    3 |                 LUT |
+| LUT3     |    6 |                 LUT |
+| LUT2     |    4 |                 LUT |
 | RAMB18E1 |    1 |        Block Memory |
+| LUT4     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

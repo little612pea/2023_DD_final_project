@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Sat Dec 30 00:59:20 2023
+// Date        : Sat Dec 30 12:09:36 2023
 // Host        : DESKTOP-KQ35SGU running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/start_rom/start_rom_stub.v
@@ -14,10 +14,9 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_4_4,Vivado 2021.1" *)
-module start_rom(clka, ena, addra, douta)
-/* synthesis syn_black_box black_box_pad_pin="clka,ena,addra[9:0],douta[11:0]" */;
+module start_rom(clka, addra, douta)
+/* synthesis syn_black_box black_box_pad_pin="clka,addra[9:0],douta[11:0]" */;
   input clka;
-  input ena;
   input [9:0]addra;
   output [11:0]douta;
 endmodule

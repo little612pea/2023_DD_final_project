@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="wall_rom_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1703869185">
+<GenRun Id="wall_rom_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1703909405">
   <File Type="PA-TCL" Name="wall_rom.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="wall_rom_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="wall_rom_reports.tcl"/>
@@ -10,7 +10,7 @@
   <File Type="VDS-TIMINGSUMMARY" Name="wall_rom_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="wall_rom_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wall_rom">
-    <File Path="$PSRCDIR/sources_1/ip/wall_rom/wall_rom.xci">
+    <File Path="$PSRCDIR/sources_1/ip/wall_rom_1/wall_rom.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -23,7 +23,7 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wall_rom">
-    <File Path="$PSRCDIR/sources_1/ip/wall_rom/wall_rom.xci">
+    <File Path="$PSRCDIR/sources_1/ip/wall_rom_1/wall_rom.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

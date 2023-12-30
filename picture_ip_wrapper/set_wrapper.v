@@ -5,7 +5,7 @@ module set_wrapper(
 	output [11:0] pix_data
 );
 
-set_wrapper set_wrapper_inst (
+set_rom set_rom_inst (
   .clka(clk),    // input wire clka
   .addra(y * 640 + x),  // input wire [18 : 0] addra
   .douta(pix_data)  // output wire [11 : 0] douta
