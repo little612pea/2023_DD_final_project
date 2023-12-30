@@ -5,13 +5,13 @@ module alter_size_display(
 );
 
 always @(*) begin
-    if(num-5'b01010<0) begin
-        num_tens = 0;
-        num_ones = num;
+    if(num<5'b01010) begin
+        num_tens = 4'b0000;
+        num_ones = num[3:0];
     end
     else begin
         num_tens = 4'b0001;
-        num_ones = num-5'b01010;
+        num_ones = num[3:0]-4'b1010;
     end
 end
 

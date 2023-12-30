@@ -15,7 +15,11 @@ module top(
     output seg_clk,
     output seg_clrn,
     output seg_sout,
-    output seg_pen
+    output seg_pen,
+
+    //arudino
+    output [7:0] SEGMENT,   //7-segment
+    output [3:0] AN         //common anode
 );
     wire up, down, left, right, enter;
     wire [4:0] num;
@@ -101,19 +105,15 @@ module top(
         .state(state)
     );
 
-    /*definition of module display_level_num(
-        input wire clk,
-        input wire [1:0] SW1,
-        input wire [1:0] SW2, //switch 没用，但是先别删
-        input wire [11:0] SW, //don't alter the definition of SSegDev for now
-        input [4:0] num,
-        input [2:0] level,
-        output wire seg_clk, 
-        output wire seg_clrn,
-        output wire seg_sout,
-        output wire SEG_PEN
-);*/
-
+    Counter counter_inst(
+        .clk(clk),
+        .size(num),
+        .start(state == 2'b01),
+        .AN(AN),
+        .SEGMENT(SEGMENT),
+        .fail()
+    );
+    
     display_level_num display_level_num(
         .clk(clk),
         .SW1(2'b00),

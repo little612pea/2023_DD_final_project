@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160
 INFO: [Device 21-403] Loading part xc7k160tffg676-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13552
+INFO: [Synth 8-7075] Helper process launched with PID 22376
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.480 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1132.781 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/FPGA-MAZE-2023DD-final/src/top.v:1]
 INFO: [Synth 8-6157] synthesizing module 'graphics' [D:/FPGA-MAZE-2023DD-final/src/graphics.v:2]
@@ -29,43 +29,43 @@ INFO: [Synth 8-6157] synthesizing module 'vgac' [D:/FPGA-MAZE-2023DD-final/src/v
 INFO: [Synth 8-6155] done synthesizing module 'vgac' (2#1) [D:/FPGA-MAZE-2023DD-final/src/vgac.v:2]
 INFO: [Synth 8-6157] synthesizing module 'draw' [D:/FPGA-MAZE-2023DD-final/src/draw.v:2]
 INFO: [Synth 8-6157] synthesizing module 'background_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/background_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'background_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/background_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'background_rom' (3#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/background_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'background_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/background_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'background_rom' (3#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/background_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (19) of module 'background_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/background_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'background_wrapper' (4#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/background_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'end_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/end_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'end_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/end_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'end_rom' (5#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/end_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'end_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/end_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'end_rom' (5#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/end_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'end_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/end_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'end_wrapper' (6#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/end_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'player_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/player_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'player_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/player_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'player_rom' (7#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/player_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'player_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/player_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'player_rom' (7#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/player_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'player_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/player_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'player_wrapper' (8#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/player_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'road_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/road_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'road_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/road_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'road_rom' (9#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/road_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'road_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/road_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'road_rom' (9#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/road_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'road_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/road_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'road_wrapper' (10#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/road_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'set_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/set_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'set_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/set_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'set_rom' (11#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/set_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'set_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/set_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'set_rom' (11#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/set_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (19) of module 'set_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/set_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'set_wrapper' (12#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/set_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'start_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/start_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'start_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/start_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'start_rom' (13#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/start_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'start_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/start_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'start_rom' (13#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/start_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'start_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/start_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'start_wrapper' (14#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/start_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'wall_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/wall_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'wall_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/wall_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'wall_rom' (15#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/wall_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wall_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/wall_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wall_rom' (15#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/wall_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'wall_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/wall_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'wall_wrapper' (16#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/wall_wrapper.v:1]
 INFO: [Synth 8-6157] synthesizing module 'win_wrapper' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/win_wrapper.v:1]
-INFO: [Synth 8-6157] synthesizing module 'win_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/win_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'win_rom' (17#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-21692-DESKTOP-KQ35SGU/realtime/win_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'win_rom' [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/win_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'win_rom' (17#1) [D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/.Xil/Vivado-11900-DESKTOP-KQ35SGU/realtime/win_rom_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (19) of module 'win_rom' [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/win_wrapper.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'win_wrapper' (18#1) [D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/win_wrapper.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'draw' (19#1) [D:/FPGA-MAZE-2023DD-final/src/draw.v:2]
@@ -81,54 +81,70 @@ INFO: [Synth 8-6157] synthesizing module 'move' [D:/FPGA-MAZE-2023DD-final/src/m
 INFO: [Synth 8-6155] done synthesizing module 'move' (24#1) [D:/FPGA-MAZE-2023DD-final/src/move.v:3]
 INFO: [Synth 8-6157] synthesizing module 'fsm' [D:/FPGA-MAZE-2023DD-final/src/fsm.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'fsm' (25#1) [D:/FPGA-MAZE-2023DD-final/src/fsm.v:1]
-INFO: [Synth 8-6157] synthesizing module 'display_level_num' [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clkdiv' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (26#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v:1]
-INFO: [Synth 8-6157] synthesizing module 'alter_size_display' [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'alter_size_display' (27#1) [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'SSeg_Dev' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
-INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'P2S' (28#1) [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
-INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/FPGA-MAZE-2023DD-final/Counter/Counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_10ms' [D:/FPGA-MAZE-2023DD-final/Counter/clk_div_10ms.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_10ms' (26#1) [D:/FPGA-MAZE-2023DD-final/Counter/clk_div_10ms.v:23]
+INFO: [Synth 8-6157] synthesizing module 'My74LS161_sub' [D:/FPGA-MAZE-2023DD-final/Counter/My74LS161.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'My74LS161_sub' (27#1) [D:/FPGA-MAZE-2023DD-final/Counter/My74LS161.v:1]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [D:/FPGA-MAZE-2023DD-final/Counter/Counter.v:39]
+INFO: [Synth 8-6157] synthesizing module 'DisplayNumber' [D:/FPGA-MAZE-2023DD-final/Counter/DisplayNumber.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [D:/FPGA-MAZE-2023DD-final/Counter/clkdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (28#1) [D:/FPGA-MAZE-2023DD-final/Counter/clkdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DisplaySync' [D:/FPGA-MAZE-2023DD-final/Counter/DisplaySync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4to1b4' [D:/FPGA-MAZE-2023DD-final/Counter/Mux4to1b4.v:23]
+INFO: [Synth 8-226] default block is never used [D:/FPGA-MAZE-2023DD-final/Counter/Mux4to1b4.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4to1b4' (29#1) [D:/FPGA-MAZE-2023DD-final/Counter/Mux4to1b4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4to1' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/Mux4to1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (30#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (31#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4to1' (32#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/Mux4to1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'DisplaySync' (33#1) [D:/FPGA-MAZE-2023DD-final/Counter/DisplaySync.v:23]
 INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v:9]
 INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v:9]
 	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (29#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (34#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v:9]
 INFO: [Synth 8-6157] synthesizing module 'AND_GATE_3_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v:9]
 	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_3_INPUTS' (30#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_3_INPUTS' (35#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v:9]
 INFO: [Synth 8-6157] synthesizing module 'OR_GATE_3_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v:9]
 	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_3_INPUTS' (31#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v:9]
-INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
-	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (32#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_3_INPUTS' (36#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v:9]
 INFO: [Synth 8-6157] synthesizing module 'AND_GATE_4_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v:9]
 	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_4_INPUTS' (33#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v:9]
-INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
-	Parameter BubblesMask bound to: 65'b00000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (34#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_4_INPUTS.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (35#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (36#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (37#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'SSeg_Dev' (38#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'display_level_num' (39#1) [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top' (40#1) [D:/FPGA-MAZE-2023DD-final/src/top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_4_INPUTS' (37#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (38#1) [D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'DisplayNumber' (39#1) [D:/FPGA-MAZE-2023DD-final/Counter/DisplayNumber.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (40#1) [D:/FPGA-MAZE-2023DD-final/Counter/Counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'display_level_num' [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alter_size_display' [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alter_size_display' (41#1) [D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SSeg_Dev' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (42#1) [D:/FPGA-MAZE-2023DD-final/7segment/P2S_io.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (43#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (44#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg_Dev' (45#1) [D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'display_level_num' (46#1) [D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (47#1) [D:/FPGA-MAZE-2023DD-final/src/top.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.480 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1132.781 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.480 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1132.781 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.480 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1132.781 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1135.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1132.781 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -155,20 +171,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1191.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1189.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1191.051 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1189.105 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1191.051 ; gain = 55.570
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1189.105 ; gain = 56.324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1191.051 ; gain = 55.570
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1189.105 ; gain = 56.324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -182,10 +198,11 @@ Applied set_property KEEP_HIERARCHY = SOFT for graphics/draw/wall_inst/wall_rom_
 Applied set_property KEEP_HIERARCHY = SOFT for graphics/draw/win_inst/win_rom_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for graphics/draw/road_inst/road_rom_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1191.051 ; gain = 55.570
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1189.105 ; gain = 56.324
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'f_reg' [D:/FPGA-MAZE-2023DD-final/Counter/Counter.v:30]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1191.051 ; gain = 55.570
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1189.105 ; gain = 56.324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -199,7 +216,7 @@ Detailed RTL Component Info :
 	   2 Input    9 Bit       Adders := 4     
 	   4 Input    5 Bit       Adders := 2     
 	   2 Input    5 Bit       Adders := 3     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 6     
 	   2 Input    3 Bit       Adders := 1     
 +---Registers : 
 	              361 Bit    Registers := 1     
@@ -209,10 +226,10 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                5 Bit    Registers := 6     
-	                4 Bit    Registers := 4     
+	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 19    
+	                1 Bit    Registers := 20    
 +---Muxes : 
 	   2 Input  361 Bit        Muxes := 8     
 	   2 Input  289 Bit        Muxes := 7     
@@ -224,14 +241,18 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit        Muxes := 2     
 	   2 Input   25 Bit        Muxes := 7     
 	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   8 Input   14 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 1     
 	   3 Input   12 Bit        Muxes := 1     
 	  10 Input    8 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
 	   4 Input    1 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 24    
+	   2 Input    1 Bit        Muxes := 28    
 	   3 Input    1 Bit        Muxes := 1     
 	  11 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
@@ -254,306 +275,3 @@ DSP Report: register vga_ctrl/row_addr_reg is absorbed into DSP draw/background_
 DSP Report: register vga_ctrl/col_addr_reg is absorbed into DSP draw/background_inst/addra0.
 DSP Report: operator draw/background_inst/addra0 is absorbed into DSP draw/background_inst/addra0.
 DSP Report: operator draw/background_inst/addra1 is absorbed into DSP draw/background_inst/addra0.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.285 ; gain = 55.805
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-DSP: Preliminary Mapping Report (see note below)
-+------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|graphics    | C'+(A:0x280)*B2 | 9      | 10     | 10     | -      | 19     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
-+------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1194.453 ; gain = 58.973
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1213.336 ; gain = 77.855
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1223.910 ; gain = 88.430
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+------+---------------+----------+
-|      |BlackBox name  |Instances |
-+------+---------------+----------+
-|1     |P2S            |         1|
-|2     |background_rom |         1|
-|3     |end_rom        |         1|
-|4     |player_rom     |         1|
-|5     |road_rom       |         1|
-|6     |set_rom        |         1|
-|7     |start_rom      |         1|
-|8     |wall_rom       |         1|
-|9     |win_rom        |         1|
-+------+---------------+----------+
-
-Report Cell Usage: 
-+------+---------------+------+
-|      |Cell           |Count |
-+------+---------------+------+
-|1     |P2S            |     1|
-|2     |background_rom |     1|
-|3     |end_rom        |     1|
-|4     |player_rom     |     1|
-|5     |road_rom       |     1|
-|6     |set_rom        |     1|
-|7     |start_rom      |     1|
-|8     |wall_rom       |     1|
-|9     |win_rom        |     1|
-|10    |BUFG           |     2|
-|11    |CARRY4         |    98|
-|12    |DSP48E1        |     1|
-|13    |LUT1           |    26|
-|14    |LUT2           |   120|
-|15    |LUT3           |   284|
-|16    |LUT4           |   137|
-|17    |LUT5           |   279|
-|18    |LUT6           |   678|
-|19    |MUXF7          |   176|
-|20    |MUXF8          |    51|
-|21    |FDCE           |   134|
-|22    |FDPE           |    11|
-|23    |FDRE           |   268|
-|24    |FDSE           |    56|
-|25    |IBUF           |     4|
-|26    |OBUF           |    18|
-+------+---------------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:06 . Memory (MB): peak = 1235.520 ; gain = 44.469
-Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1235.520 ; gain = 100.039
-INFO: [Project 1-571] Translating synthesized netlist
-Parsing EDIF File [D:/FPGA-MAZE-2023DD-final/7segment/P2S.edf]
-Finished Parsing EDIF File [D:/FPGA-MAZE-2023DD-final/7segment/P2S.edf]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1246.594 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 326 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[0]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[10]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[11]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[12]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[13]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[14]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[15]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[16]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[17]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[18]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[19]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[1]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[20]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[21]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[22]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[23]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[24]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[25]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[26]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[27]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[28]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[29]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[2]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[30]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[31]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[32]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[33]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[34]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[35]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[36]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[37]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[38]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[39]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[3]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[40]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[41]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[42]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[43]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[44]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[45]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[46]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[47]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[48]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[49]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[4]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[50]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[51]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[52]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[53]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[54]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[55]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[56]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[57]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[58]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[59]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[5]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[60]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[61]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[62]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[63]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[6]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[7]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[8]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/P_Data_IBUF[9]_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/Serial_IBUF_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/clk_IBUF_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. display_level_num/m7/M2/rst_IBUF_inst 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-36] Removing redundant OBUF, seg_pen_OBUF_inst, from the path connected to top-level port: seg_pen 
-Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
-WARNING: [Opt 31-36] Removing redundant OBUF, seg_sout_OBUF_inst, from the path connected to top-level port: seg_sout 
-Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
-WARNING: [Opt 31-36] Removing redundant OBUF, seg_clrn_OBUF_inst, from the path connected to top-level port: seg_clrn 
-Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
-WARNING: [Opt 31-36] Removing redundant OBUF, seg_clk_OBUF_inst, from the path connected to top-level port: seg_clk 
-Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1269.660 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Synth Design complete, checksum: ce8be942
-INFO: [Common 17-83] Releasing license: Synthesis
-97 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 1269.660 ; gain = 134.180
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.runs/synth_1/top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 30 14:46:54 2023...

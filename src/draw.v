@@ -35,10 +35,11 @@ module draw
 // beware that x is 10 bits, y is 9 bits
 	wire [9:0] begin_x = MAP_CENTER_X - block_width * num / 2;
 	wire [8:0] begin_y = MAP_CENTER_Y - block_width * num / 2;
-	wire [9:0] cur_x = begin_x + block_width * x_index;
-	wire [8:0] cur_y = begin_y + block_width * y_index;
-	wire [4:0] row = x-cur_x;
-	wire [4:0] col = y-cur_y;
+	
+	wire [9:0] cur_x = (x - begin_x) / block_width;
+	wire [8:0] cur_y = (y - begin_y) / block_width;
+	wire [4:0] row = x-(cur_x*block_width+begin_x);
+	wire [4:0] col = y-(cur_y*block_width+begin_y);
 	reg [8:0] index;
 
 	wire [11:0] background_rgb;

@@ -105,8 +105,14 @@ read_verilog -library xil_defaultlib {
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE.v
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_3_INPUTS.v
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/AND_GATE_4_INPUTS.v
+  D:/FPGA-MAZE-2023DD-final/Counter/Counter.v
+  D:/FPGA-MAZE-2023DD-final/Counter/DisplayNumber.v
+  D:/FPGA-MAZE-2023DD-final/Counter/DisplaySync.v
   D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Hex2Seg.v
   D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/HexTo8SEG.v
+  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/Mux4to1.v
+  D:/FPGA-MAZE-2023DD-final/Counter/Mux4to1b4.v
+  D:/FPGA-MAZE-2023DD-final/Counter/My74LS161.v
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/MyMC14495.v
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE.v
   D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/gates/OR_GATE_3_INPUTS.v
@@ -115,7 +121,8 @@ read_verilog -library xil_defaultlib {
   D:/FPGA-MAZE-2023DD-final/7segment/SSeg_Dev/Sseg_Dev.v
   D:/FPGA-MAZE-2023DD-final/7segment/alter_size_display.v
   D:/FPGA-MAZE-2023DD-final/picture_ip_wrapper/background_wrapper.v
-  D:/FPGA-MAZE-2023DD-final/7segment/DisplayNumber/circuit/clkdiv.v
+  D:/FPGA-MAZE-2023DD-final/Counter/clk_div_10ms.v
+  D:/FPGA-MAZE-2023DD-final/Counter/clkdiv.v
   D:/FPGA-MAZE-2023DD-final/src/clkdiv_25mhz.v
   D:/FPGA-MAZE-2023DD-final/src/create_map.v
   D:/FPGA-MAZE-2023DD-final/7segment/display_level_num.v
