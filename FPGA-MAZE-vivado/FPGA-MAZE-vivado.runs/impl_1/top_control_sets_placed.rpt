@@ -1,0 +1,116 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Dec 30 17:19:24 2023
+| Host         : DESKTOP-KQ35SGU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   181 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |    12 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             125 |           66 |
+| No           | No                    | Yes                    |             102 |           38 |
+| No           | Yes                   | No                     |              47 |           14 |
+| Yes          | No                    | No                     |             162 |           72 |
+| Yes          | No                    | Yes                    |              58 |           31 |
+| Yes          | Yes                   | No                     |             165 |          104 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |                  Enable Signal                 |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                         | ps2/temp_data[5]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[2]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  move/clk_10hz_reg_n_0                 |                                                | ps2/AR[0]                                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[0]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[6]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[4]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[1]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[7]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | display_level_num/m7/M2/EN_i_1_n_0             |                                          |                1 |              1 |         1.00 |
+|  fsm/state_reg[1]_6                    |                                                | counter_inst/m3/f                        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | ps2/temp_data[3]_i_1_n_0                       | rst_sys_IBUF                             |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | display_level_num/m7/M2/state                  |                                          |                2 |              3 |         1.50 |
+|  counter_inst/m3/CP01_out              |                                                | counter_inst/m4/Q_reg[3]_i_3__1_n_0      |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                         | ps2/p_0_in                                     | rst_sys_IBUF                             |                2 |              4 |         2.00 |
+|  counter_inst/m2/CP00_out              |                                                | counter_inst/m3/co3                      |                4 |              4 |         1.00 |
+|  counter_inst/clk_div_10ms/clk_counter |                                                | counter_inst/m1/co1                      |                2 |              4 |         2.00 |
+|  counter_inst/m1/CP0                   |                                                | counter_inst/m2/co2                      |                1 |              4 |         4.00 |
+|  move/clk_10hz_reg_n_0                 | fsm/state_reg[1]_1[0]                          | ps2/AR[0]                                |                2 |              5 |         2.50 |
+|  move/clk_10hz_reg_n_0                 | fsm/state_reg[1]_2[0]                          | ps2/AR[0]                                |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                         | display_level_num/m7/M2/shift_count[5]_i_1_n_0 |                                          |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                         | fsm/state_reg[0]_1                             | init/num_reg[1]_rep__1_2                 |                7 |              8 |         1.14 |
+|  clk_div                               | fsm/state_reg[1]_0[0]                          |                                          |                3 |              9 |         3.00 |
+|  clk_div                               |                                                | rst_sys_IBUF                             |                5 |             10 |         2.00 |
+|  clk_div                               | graphics/vga_ctrl/v_count                      | rst_sys_IBUF                             |                3 |             10 |         3.33 |
+|  clk_div                               | graphics/vga_ctrl/state_reg[0][0]              | rst_sys_IBUF                             |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                         | ps2/data[9]_i_1_n_0                            | rst_sys_IBUF                             |                3 |             10 |         3.33 |
+|  init/clk_2hz_reg_n_0                  |                                                | rst_sys_IBUF                             |                5 |             10 |         2.00 |
+|  clk_div                               |                                                | graphics/vga_ctrl/rdn                    |                2 |             12 |         6.00 |
+|  clk_div                               | fsm/E[0]                                       | rst_sys_IBUF                             |                8 |             12 |         1.50 |
+|  init/clk_2hz_reg_n_0                  | fsm/state_reg[0]_0                             | rst_sys_IBUF                             |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                         |                                                | counter_inst/clk_div_10ms/cnt[2]_i_1_n_0 |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                         | fsm/state_reg[0]_1                             | fsm/num_reg[1]_rep                       |               28 |             38 |         1.36 |
+|  clk_IBUF_BUFG                         |                                                |                                          |               17 |             49 |         2.88 |
+|  clk_IBUF_BUFG                         | display_level_num/m7/M2/buffer[63]_i_1_n_0     |                                          |               24 |             64 |         2.67 |
+|  clk_IBUF_BUFG                         |                                                | rst_sys_IBUF                             |               22 |             75 |         3.41 |
+|  clk_div                               |                                                |                                          |               49 |             76 |         1.55 |
+|  clk_IBUF_BUFG                         | fsm/state_reg[0]_1                             |                                          |               40 |             79 |         1.98 |
+|  clk_IBUF_BUFG                         | fsm/state_reg[0]_1                             | init/p_0_in[0]                           |               57 |             97 |         1.70 |
++----------------------------------------+------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+
+
