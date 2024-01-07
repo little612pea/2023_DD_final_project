@@ -1,2 +1,0 @@
-set_rom.v,verilog,xil_defaultlib,../../../../FPGA-MAZE-vivado.gen/sources_1/ip/set_rom_1/sim/set_rom.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
