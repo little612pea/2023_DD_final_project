@@ -4,8 +4,8 @@ module Counter(
     input [4:0] size,
     input start,
     output [3:0] AN,
-    output [7:0] SEGMENT,
-    output fail
+    output [7:0] SEGMENT
+   // output fail
     );
     wire clk_counter;
     wire [15:0] Limit_Time;
@@ -37,6 +37,6 @@ module Counter(
     My74LS161_sub m2(.CP(co1||(!start&&clk_counter)),.CRn(!(ten==4'b1111)),.LDn(start),.D(Limit_Time[7:4]),.CTP(1'b1),.CTT(1'b1),.Q(ten),.CO(co2));
     My74LS161_sub m3(.CP(co2||(!start&&clk_counter)),.CRn(!(hundred==4'b1111)),.LDn(start),.D(Limit_Time[11:8]),.CTP(1'b1),.CTT(1'b1),.Q(hundred),.CO(co3));
     My74LS161_sub m4(.CP(co3||(!start&&clk_counter)),.CRn(!(thousand==4'b1111)),.LDn(start),.D(Limit_Time[15:12]),.CTP(1'b1),.CTT(1'b1),.Q(thousand),.CO(1'b0));
-    DisplayNumber display_inst(.clk(clk), .hexs((f==1)?16'b0000_0000_0000_0000:{thousand,hundred,ten,one}), .points(4'b0100), .rst(1'b0), .LEs(4'b0000), .AN(AN), .SEGMENT(SEGMENT));
-    assign fail=f;
+    DisplayNumber display_inst(.clk(clk), .hexs(/*(f==1)?16'b0000_0000_0000_0000:*/{thousand,hundred,ten,one}), .points(4'b0100), .rst(1'b0), .LEs(4'b0000), .AN(AN), .SEGMENT(SEGMENT));
+    //assign fail=f;
 endmodule

@@ -1,0 +1,292 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 13192
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jan 02 16:12:42 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	E:/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	23828
+User home directory: C:/Users/23828
+User working directory: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Vivado
+HDI_APPROOT: E:/Vivado/2021.1
+RDI_DATADIR: E:/Vivado/2021.1/data
+RDI_BINDIR: E:/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/23828/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/23828/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/23828/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	E:/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/vivado.log
+Vivado journal file: 	D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/vivado.jou
+Engine tmp dir: 	D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/.Xil/Vivado-13192-DESKTOP-KQ35SGU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: E:/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: E:/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: E:/Vivado/2021.1
+XILINX_VIVADO: E:/Vivado/2021.1
+XILINX_VIVADO_HLS: E:/Vivado/2021.1
+
+
+GUI allocated memory:	323 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,152 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data.  Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 77 MB. Current time: 1/2/24, 4:12:43 PM CST
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\FPGA-MAZE-2023DD-final\FPGA-MAZE-vivado\FPGA-MAZE-vivado.xpr. Version: Vivado v2023.1 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/22143/Downloads/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2021.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105025kb) [00:00:24]
+// [Engine Memory]: 1,152 MB (+1056922kb) [00:00:24]
+// [GUI Memory]: 119 MB (+11898kb) [00:00:25]
+// [GUI Memory]: 128 MB (+3418kb) [00:00:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  8515 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1450 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1443.004 ; gain = 0.000 
+// Project name: FPGA-MAZE-vivado; location: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado; part: xc7k160tffg676-2L
+// Elapsed time: 21 seconds
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 138 MB (+3533kb) [00:00:38]
+// a (cs): Critical Messages: addNotify
+// [GUI Memory]: 152 MB (+7638kb) [00:00:38]
+// z (cs): Project is Read-Only: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Project is Read-Only"); // z
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aD (cs): Save Project As: addNotify
+// Elapsed time: 25 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "2023DD-final-project-maze-vivado"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'p' command handler elapsed time: 25 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aD
+// bz (cs):  Save Project As : addNotify
+// Tcl Message: save_project_as 2023DD-final-project-maze-vivado D:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado -force 
+// Tcl Message: INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/award.coe 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/background.coe INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/end.coe 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 161 MB (+760kb) [00:01:31]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Elapsed time: 15 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// WARNING: HEventQueue.dispatchEvent() is taking  1228 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_RENAME
+// WARNING: HEventQueue.dispatchEvent() is taking  3581 ms.
+// Tcl Message: save_project_as: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1443.004 ; gain = 0.000 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 101 MB. Current time: 1/2/24, 4:14:17 PM CST
+// Elapsed time: 17 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 98 MB. Current time: 1/2/24, 4:14:47 PM CST
+// Elapsed time: 31 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 99 MB. Current time: 1/2/24, 4:15:17 PM CST
+// Elapsed time: 35 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// Elapsed time: 27 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// Elapsed time: 12 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 99 MB. Current time: 1/2/24, 4:16:17 PM CST
+// Elapsed time: 13 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-505] Unrecognized Option Name EnableResourceEstimation. ]", 3); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp'. ]", 13); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp'. ]", 13); // ah
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton

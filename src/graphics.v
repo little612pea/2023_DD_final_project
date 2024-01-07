@@ -10,6 +10,7 @@ module graphics(
 		output [3:0]Blue,
 		
 		input [4:0] num,
+		input [2:0] level,
 		input [1:0] state,
 		input [360:0] map,
 		input [4:0] x_index,
@@ -49,6 +50,7 @@ module graphics(
 		.x(x), 
 		.y(y), 
 		.num(num),
+		.level(level),
 		.state(state),
 		.map(map), 
 		.x_index(x_index),

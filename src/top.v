@@ -42,6 +42,7 @@ module top(
 		.Blue(Blue),
 		
 		.num(num),
+        .level(level),
 		.state(state),
 		.map(map),
 		.x_index(x_index),
@@ -110,8 +111,8 @@ module top(
         .size(num),
         .start(state == 2'b01),
         .AN(AN),
-        .SEGMENT(SEGMENT),
-        .fail()
+        .SEGMENT(SEGMENT)
+        //.fail()
     );
     
     display_level_num display_level_num(

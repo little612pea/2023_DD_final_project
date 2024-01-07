@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan  2 16:12:23 2024
+# Process ID: 13192
+# Current directory: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10336 D:\FPGA-MAZE-2023DD-final\FPGA-MAZE-vivado\FPGA-MAZE-vivado.xpr
+# Log file: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/vivado.log
+# Journal file: D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/22143/Downloads/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado' since last save.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableResourceEstimation
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimCompileState
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name LocalIPRepoLeafDirName
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'award_rom' is locked:
+* Project containing IP 'award_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'background_rom' is locked:
+* Project containing IP 'background_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'end_rom' is locked:
+* Project containing IP 'end_rom' is read-only.
+WARNING: [IP_Flow 19-3664] IP 'enemy_rom' generated file not found 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'enemy_rom' generated file not found 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'enemy_rom' generated file not found 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'enemy_rom' generated file not found 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'enemy_rom' generated file not found 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-2162] IP 'enemy_rom' is locked:
+* Project containing IP 'enemy_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'fail_rom' is locked:
+* Project containing IP 'fail_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'player_rom' is locked:
+* Project containing IP 'player_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'set_rom' is locked:
+* Project containing IP 'set_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'start_rom' is locked:
+* Project containing IP 'start_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'unknown_rom' is locked:
+* Project containing IP 'unknown_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'wall_rom' is locked:
+* Project containing IP 'wall_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'welcome_rom' is locked:
+* Project containing IP 'welcome_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'win_rom' is locked:
+* Project containing IP 'win_rom' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'road_rom' is locked:
+* Project containing IP 'road_rom' is read-only.
+WARNING: [Project 1-231] Project 'FPGA-MAZE-vivado.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1443.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as 2023DD-final-project-maze-vivado D:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado -force
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/award.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/background.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/end.coe
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.v' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.vhdl' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_stub.vhdl'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.v' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'd:/FPGA-MAZE-2023DD-final/FPGA-MAZE-vivado/FPGA-MAZE-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.vhdl' to 'd:/FPGA-MAZE-2023DD-final/2023DD-final-project-maze-vivado/2023DD-final-project-maze-vivado.gen/sources_1/ip/enemy_rom_1/enemy_rom_sim_netlist.vhdl'
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/enemy.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/fail.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/player.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/road.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/set.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/start.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/unknown.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/wall.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/welcome.coe
+INFO: [IP_Flow 19-7005] Skipping external file d:/FPGA-MAZE-2023DD-final/coe_files/win.coe
+save_project_as: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1443.004 ; gain = 0.000

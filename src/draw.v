@@ -8,6 +8,7 @@ module draw
     input [8:0] y,       // y
 
     input [4:0] num,          // the num of blcoks in a line
+	input [2:0] level,		
     input [360:0] map,        // map, 0 for wall, 1 for road, 19*19 at most
     input [4:0] x_index,
 	input [4:0] y_index,
@@ -41,6 +42,9 @@ module draw
 	wire [4:0] row = x-(cur_x*block_width+begin_x);
 	wire [4:0] col = y-(cur_y*block_width+begin_y);
 	reg [8:0] index;
+	reg in_range;
+	reg [4:0] x_dif;
+	reg [4:0] y_dif;
 
 	wire [11:0] background_rgb;
 	wire [11:0] end_rgb;
@@ -50,6 +54,7 @@ module draw
 	wire [11:0] start_rgb;
 	wire [11:0] wall_rgb;
 	wire [11:0] win_rgb;
+	wire [11:0] unknown_rgb;
 
 background_wrapper background_inst (
 	.clk(vga_clk),
@@ -93,6 +98,13 @@ start_wrapper start_inst (
 	.pix_data(start_rgb)
 );
 
+unknown_wrapper unknown_inst (
+	.clk(vga_clk),
+	.row(row),
+	.col(col),
+	.pix_data(unknown_rgb)
+);
+
 wall_wrapper wall_inst (
 	.clk(vga_clk),
 	.row(row),
@@ -125,16 +137,24 @@ win_wrapper win_inst (
 				pix_x_index <= (x - begin_x) / block_width;
 				pix_y_index <= (y - begin_y) / block_width;
 				index <= pix_y_index * num + pix_x_index;
-				if(pix_x_index == x_index && pix_y_index == y_index)
-					pix_data <= player_rgb; // current position
-				else if(pix_x_index == 1 && pix_y_index == 1)
-					pix_data <= start_rgb; // start point
-				else if(pix_x_index == num - 2 && pix_y_index == num - 2)
-					pix_data <= end_rgb; // end point
-				else if(map[index] == 1)
-					pix_data <= road_rgb; // road
-				else
-					pix_data <= wall_rgb; // wall
+				x_dif <= (pix_x_index>x_index)?pix_x_index-x_index:x_index-pix_x_index;
+				y_dif <= (pix_y_index>y_index)?pix_y_index-y_index:y_index-pix_y_index;
+				in_range <= (x_dif+y_dif<4'b1010-{1'b0,level})?1:0;
+					if(level<3'b010||level>=3'b011&&in_range)begin
+						if(pix_x_index == x_index && pix_y_index == y_index)
+							pix_data <= player_rgb; // current position
+						else if(pix_x_index == 1 && pix_y_index == 1)
+							pix_data <= start_rgb; // start point
+						else if(pix_x_index == num - 2 && pix_y_index == num - 2)
+							pix_data <= end_rgb; // end point
+						else if(map[index] == 1)
+							pix_data <= road_rgb; // road
+						else
+							pix_data <= wall_rgb; // wall
+					end
+					else begin
+						pix_data <= unknown_rgb; // unknown
+					end
 				end
 			 else begin
 				pix_data <= background_rgb; // background
